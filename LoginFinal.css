@@ -1,276 +1,382 @@
 *{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0px;
-  box-sizing: border-box;
-  color: #706c6e;
-  
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #706c6e;
+    text-decoration: none;
 }
 
-
-
-#navi-bar{
-  height: 120px;
-  width: auto;
-  background-color: #fffefe;
+#container{
+    display:grid;
+    grid-template-rows: 3;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "navi" "main" "last";
 }
 
-#navi-bar img{
-  padding-top: 30px;
-  margin-left: 70px;
+.navi-bar{
+    margin-top: 10px;
+    background-color: #fffefe;
 }
 
-#main-content{
-  padding-top: 23px;
-  height: 470px;
-  width: auto;
-  background-color: #feca33; 
+.logo{
+    width: 35%;   
 }
 
-.navi-link{
-  float: right;
-  margin-right: 50px;
-  text-decoration: none;
-  color: #706c6e;
-  margin-top: 50px;
-  font-size:larger;   
+.navi-bar a{
+    margin-top: 1px;
+    float: right;
+    padding-right: 15px;
+    font-size:small;
 }
 
-
-
-.navi-link:hover{
-  background-color: rgba(255, 255, 255, 0.997);
-  color: #b8b7b7;
-  border: 3px solid #b8b7b7;
-  padding: 10px 20px;
-  text-align: center;
-  float: right;
-  margin-right: 50px;
-  text-decoration: none;
-  color: #706c6e;
-  margin-top: 40px;
-  font-size:larger; 
+.navi-bar a:hover{
+    color: black;
 }
 
-#main-content > img{
-  width: 600px;
-  margin-top: 120px;
-  margin-right: 60px;
-  float: right;
+.car-image{
+    background-color: #feca33; 
+    
 }
 
-#form-container form{
-  margin-left: 60px;
-  color: #706c6e;
-  width: 360px;
-  height: 425px;
-  padding: 20px;
-  background: #fefffe;
-  box-shadow: 0 8px 16px black;
-  position:absolute;
+.car-image img{
+    margin-top: 30px;
+    width: 60%;
+    float: right;
+    margin-right: 85px;
+}
+#main{
+    background-color: #feca33; 
+    height: 350px;
 }
 
-
-#form-container form h2{
-  text-align: center;
-  margin-bottom: 35px;
-  font-size:xx-large;
+#form{
+    margin-top: 20px;
+    float: right;
+    height: 280px;
+    width: 200px;
+    background-color: #fffefe;
+    margin-right: 110px;
+    box-shadow: 0 8px 16px black;
 }
 
-.formhead{
-  font-size:large;
-  font-weight: bold;
+#form h2{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-#form-container form input{
-  font-size: large;
-  width: 100%;
-  height: 40px;
-  border-radius: 3px;
-  border: none;
-  border-bottom: 2px solid #706c6e;
-  margin: 10px 0 10px 0;
+#form label{
+    font-size: small;
+    margin-bottom: 3px;
 }
 
-#form-container button{
-  background-color: #706c6e;
-  color:white;
-  border: none;
-  font-size: large;
-  padding: 5px;
-  width: 120px;
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 97px;
-
+#name{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#password{
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
-#Reg{
-  margin-top: 30px;
-  float:left;
-  text-decoration: none;
-}
-#Forgot{
-  margin-top: 30px;
-  float:right;
-  text-decoration: none;
+#form input{
+    border: none;
+    border-bottom: 1.5px solid #706c6e;
 }
 
-#form-container a:hover{
-  color:black;
+#form button{
+    border: none;
+    background-color: #706c6e;
+    color: #fffefe;
+    margin-left: 75px;
+    padding: 2px;
+    width: 50px;
+    border-radius: 1px;
+    margin-bottom: 20px;
 }
 
-#but:hover{
-  background-color: #b8b7b7;
-  color: black;
+#form button:hover{
+    color: black;
 }
 
-#main-content p{
- margin-left: 550px;
- color:white;
- font-weight:bold;
- font-size:xx-large;
+#rem
+{
+    margin-top: 10px;
+    font-size:x-small;
 }
 
-@media only screen and (max-width: 1000px){
-#navi-bar{
-  height: 120px;
-  width: auto;
-  background-color: #fffefe;
+#forgot{
+    margin-left: 10px;
+    font-size:x-small;
 }
-.navi-link{
-float: right;
-margin-right: 35px;
-margin-top: 50px;
-font-size:larger;   
+#im{
+    display: none;
 }
-
-#navi-bar img{
-padding-top: 40px;
-margin-left: 40px;
-width: 200px;
-height: auto;
+#register{
+    margin-left: 10px;
+    font-size:x-small;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#forgot:hover{
+    color: black;
 }
 
-#form-container form{
-margin-left: 60px;
-width: 360px;
-height: 425px;
-padding: 20px;
+#register:hover{
+    color: black;
 }
-}
+@media only screen and (max-width: 800px) and (min-width:530px){
 
-@media only screen and (max-width: 800px) {
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    
+    .navi-bar{
+        margin-top: 20px;
+        background-color: #fffefe;
+        margin-bottom: 20px;
+    }
+    .navi-bar a{
+        margin-top: 15px;
+        float: right;
+        padding-right: 20px;
+        font-size:large;
+    }
+    .car-image{
+        background-color: #feca33; 
+        grid-area: main;
+    }
+    
 
+    #form{
+        margin-top:-41%;
+        float: left;
+        height: 280px;
+        width: 200px;
+        background-color: #fffefe;
+        margin-left: 30px;
+        box-shadow: 0 8px 16px black;
+    }
+    #main{
+        grid-area: main;
+    }
+    #im{
+        display:inline;
+        margin-top: 100px;
+        width: 60%;
+        float: right;
+        margin-right:0%;
+    }
 
-
-#form-container form{
-  margin-left: 60px;
-  width: 360px;
-  height: 425px;
-  padding: 20px;
-}
-
-#navi-bar{
-height: 100px;
-width: auto;
-background-color: #fffefe;
-}
-
-#navi-bar img{
-padding-top: 40px;
-margin-left: 20px;
-width: 150px;
-height: auto;
-}
-
-.navi-link{
-margin-right: 15px;
-margin-top: 45px;
-font-size:large;   
-}
-
+   
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:800px) and (max-width:1056px){
 
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    .navi-bar{
+        margin-top: 10px;
+        background-color: #fffefe;
+        height: 80px;
+    }
+    
+    .logo{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 20%;
 
+    }
 
+    .navi-bar a{
+        margin-top: 2.5%;
+        float: right;
+        padding-right: 25px;
+        font-size:large;
+    }
+    .car-image{
+        grid-area: main;
+    }
+    #main{
+        grid-area: main;
+        height: 500px;
+    }
+    #im{
+        display:inline;
+        margin-top: 130px;
+        width: 50%;
+        float: right;
+        margin-right: 7%;
+    }
 
-#form-container form{
-  margin-top: 65px;
-  margin-left: 10px;
-  width: 200px;
-  height: 305px;
-  background: #fffefe;
+    #form{
+        float: left;
+        height: 350px;
+        margin-top:-32%;
+        width: 270px;
+        background-color: #fffefe;
+        margin-left: 7%;
+        box-shadow: 0 8px 16px black;
+    }
+
+    #form h2{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size:x-large;
+    }
+    #form label{
+        font-size: medium;
+    }
+
+    #name{
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    #password{
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+    #form input{
+        border: none;
+        border-bottom: 1.5px solid #706c6e;
+    }
+    
+    #form button{
+        margin-left: 95px;
+        padding: 3px;
+        width: 70px;
+    }
+    
+    #rem
+    {
+        margin-top: 15px;
+        font-size:small;
+        bottom: 3px;
+    }
+    
+    #forgot{
+        font-size:small;
+    }
+    #register{
+        font-size:small;
+    }
+
+    
 }
 
-#navi-bar{
-height: 80px;
-width: auto;
-background-color: #fffefe;
-}
+@media only screen and (min-width:1056px){
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    .navi-bar{
+        margin-top: 10px;
+        background-color: #fffefe;
+        height: 80px;
+    }
+    
+    .logo{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 20%;
 
-#navi-bar img{
-padding-top: 30px;
-margin-left: 20px;
-width: 140px;
-height: auto;
-}
+    }
 
-.navi-link{
-margin-right: 10px;
-margin-top: 35px;
-font-size:medium;   
-}
-#form-container form h2{
-margin-bottom: 30px;
-font-size:larger;
-}
+    .navi-bar a{
+        margin-top: 2.5%;
+        float: right;
+        padding-right: 65px;
+        font-size:large;
+    }
+    .car-image{
+        grid-area: main;
+    }
+    #main{
+        grid-area: main;
+        height: 500px;
+    }
+    #im{
+        display:inline;
+        margin-top: 130px;
+        width: 50%;
+        float: right;
+        margin-right: 4.6%;
+    }
 
-.formhead{
-font-size:medium;
-font-weight: bold;
-}
+    #form{
+        float: left;
+        height: 370px;
+        margin-top:5%;
+        width: 300px;
+        background-color: #fffefe;
+        margin-left: 6%;
+        box-shadow: 0 8px 16px black;
+    }
 
-#form-container form input{
-font-size:small;
-height: 20px;
-margin: 10px 0 5px 0;
-}
+    #form h2{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size:xx-large;
+    }
+    #form label{
+        font-size: large;
+        margin-bottom: 20%;
+    }
 
-#form-container button{
-font-size:small;
-padding: 5px;
-width: 60px;
-margin-top: 10px;
-margin-left: 50px;
+    #name{
+        margin-bottom: 2px;
+        margin-left: 30px;
+    }
+    #password{
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #form input{
+        border: none;
+        border-bottom: 1.5px solid #706c6e;
+    }
+    
+    #form button{
+        margin-left: 100px;
+        padding: 8px;
+        width: 80px;
+    }
+    
+    #rem
+    {
+        margin-top: 15px;
+        font-size:small;
+        bottom: 3px;
+    }
+    
+    #forgot{
+        font-size:small;
+    }
+    #register{
+        font-size:small;
+    }
+    #nameValidation{
+        font-size: small;
+        margin-left: 30px;
+    }
 
-}
-
-#Reg{
-margin-left: 23px;
-margin-top: 10px;
-font-size: small;
-text-align: center;
-}
-#Forgot{
-font-size: small;
-margin-top: 2px;
-margin-right: 24px;
-}
-
-.navi-link:hover{
-padding: 2px 2px;
-margin-right: 5px;
-
-}
-
-#main-content > img{
-width: 500px;
-margin-top: 120px;
-margin-right: 10px;
-float: right;
-}
-
+    #passValid{
+        font-size: small;
+        margin-left: px;
+    }
+    
+   
 }
