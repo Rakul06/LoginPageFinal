@@ -7,38 +7,45 @@
     <title>Login</title>
 </head>
 <body>
-    <div>
-        <div id="navi-bar">
-            <img src="logoFinal.gif" alt="Logo">
-            <a href="register.html" class="navi-link">Register</a>
-            <a href="" class="navi-link">Contact</a>
-            <a href="" class="navi-link">Vechile Models </a>
-            <a href="" class="navi-link">Home </a>
-
+    <div id="container">
+        <div class="navi-bar">
+            <img src="logoFinal.gif" alt="logo" class="logo">
+            <a href="">Contact</a>
+            <a href="">Register</a>
+            <a href="">Vechiles</a>
+            <a href="">Home</a>
+            
         </div>
-        <div id="main-content">
-            <img src="Benz.png" alt="car1">
-            <div id="form-container">
-
-                <form action="">
-                  <h2>Login</h2>
-                  <label for="username" class="formhead">username</label>
-                  <input type="text" name="username" id="username">
-                  <span style="color: red;">Username not valid</span>
-                  <br>
-                  <label for="password" class="formhead">password</label>
-                  <input type="password" name="password" id="">
-                  <span style="color: red;"></span>
-                  <br>
-                  <button type="submit" id="but">Login</button>
-                  <a href="register.html" id="Reg">Not Yet Register ?</a></p>
-                  <a href="" id="Forgot">Forgot Password ?</a></p>
-                </form>
-          
-          
-              </div>
+        <div class="car-image">
+            <img src="Benz.png" alt="">
+            
+        </div>
+        <div id="main">
+            <img src="Benz.png" alt="" id="im">
+           <div id="form">
+            <h2>Login</h2>
+            <div id="name">
+                <label for="">username</label>
+                <br>
+                <input type="text">
+            </div>
+            <span id="nameValidation"style="color: red;"></span>
+            <div id="password">
+                <label for="">password</label>
+                <br>
+                <input type="password" name="" id="">
                 
+                <p id="rem">Remember me <input type="checkbox" id="check"></p>
+                <span id="passValid"style="color: red;"></span>
+                
+            </div>
+            <button>Login</button>
+            <br>
+            <a href="" id="forgot">Forgot Password</a>
+            <a href="" id="register">Not yet Register</a>
+           </div>
         </div>
+
     </div>
 </body>
 </html>
